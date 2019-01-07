@@ -1,0 +1,23 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 12px;
+    list-style-type: none;
+}
+.site-nav {
+    background: tomato;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.site-nav li {
+    /* margin-right: 20px; */
+}
+
+a {
+    background:red;
+}
