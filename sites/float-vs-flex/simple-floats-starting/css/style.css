@@ -9,8 +9,68 @@ body {
 
 .page-header {
   background: rgb(238, 238, 242);
-  margin-bottom: 120px;
   font-size: 48px;
   padding: 2rem;
   text-align: center;
 }
+
+.site-nav {
+  background: rgb(240, 232, 232);
+  border-bottom: 1px solid rgb(153, 147, 147);
+  box-shadow: 0 0 8px 0 grey;
+  padding: 8px 24px;
+}
+
+.list-view {
+  display: flex;
+  justify-content: center;
+}
+
+.list-view li {
+  margin-right: 24px;
+}
+
+.list-view li:last-of-type {
+  margin-left: auto;
+}
+
+.list-view li:first-of-type {
+  margin-right: auto;
+}
+
+/* .flex-container {
+  display: flex;
+  width: 500px;
+  padding: 24px;
+  background: chartreuse;
+  justify-content: space-between;
+  align-items: flex-end;
+} */
+
+/* ul {
+  width: calc(( 100% - (24px * 2)) /3);
+  height: 150px;
+  background: azure;;
+} */
+
+/* .container {
+  background: sandybrown;
+  width: 80%;
+  margin: 0 auto;
+  padding: 24px;
+} */
+/* 
+ul {
+  float: left;
+  width: calc(( 100% - ( 24px * 2)) / 3);
+  height: 250px;
+  background: salmon;
+  margin-right: 24px;
+} */
+
+/* ul:last-of-type {
+  margin-right: 0;
+} */
+/* img {
+  width: 300px;
+} */
