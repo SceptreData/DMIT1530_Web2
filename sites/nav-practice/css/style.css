@@ -1,0 +1,70 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+}
+
+body {
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 100%
+}
+
+.site-nav {
+    height: 3.5rem;
+    background: rgb(216, 216, 216);
+}
+
+.nav-list{
+    height: 4rem;
+    padding: 1.5rem 1.75rem;
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li {
+    margin-right: 15px;
+}
+
+.nav-list li:first-of-type {
+    margin-right: auto;
+}
+
+.nav-list li:last-of-type {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+button {
+    margin-right: 0;
+}
+
+/* Header Styles
+----------------------- */
+
+.page-header {
+    text-align: center;
+    padding: 10rem 0;
+    background: linear-gradient(rgb(238, 138, 120), tomato);
+}
+
+
+main {
+    background: rgb(192, 201, 218);
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
