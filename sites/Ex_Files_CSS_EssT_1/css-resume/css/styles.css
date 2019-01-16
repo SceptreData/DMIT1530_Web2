@@ -1,0 +1,68 @@
+/* Global Styles
+---------------------------*/
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    color: #EF233C;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ .content-wrap {
+    width: 950px;
+    margin: 0 auto;
+} 
+
+/* Header and Footer 
+---------------------------*/
+
+header, footer {
+    width: 960px;
+    color: darkblue;
+    margin: 0 auto;
+    background: lightgrey;
+}
+
+header h1, header h2 {
+    color: steelblue;
+}
+
+
+.profile-img {
+    float: left;
+    border-radius: 10%;
+    width: 250px;
+    background-color: white;
+    margin-right: 30px;
+}
+
+
+
+/* Work Experience
+---------------------------*/
+.work {
+    clear: both;
+    background-color: #EDF2F4;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* Education
+---------------------------*/
+
+.education {
+    background-color: #8D99AE;
+}
