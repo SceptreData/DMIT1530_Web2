@@ -10,4 +10,88 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  background: rgb(14, 13, 13);
+}
+
+body {
+  margin: 0 auto;
+  width: 80%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.site-nav {
+  line-height: 24px;
+  color: #fff;
+  max-height: 80px;
+}
+
+.list-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.list-view li {
+  margin-right: 30px;
+  padding: 14px;
+}
+
+.list-view li:first-of-type {
+  margin-right: auto;
+}
+
+/* The Button */
+.list-view li:last-of-type {
+  margin-left: auto;
+  padding: 0 24px;
+}
+
+.buy-button {
+  line-height: 32px;
+  border: 0;
+  padding: 0 24px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: all .3s;
+}
+
+.buy-button:hover {
+  color: #fff;
+  background:#e28534 ;
+  transition: all .3s ease;
+
+}
+
+.header-marquee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: url(../img/tiger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 90vh;
+}
+
+.header-marquee h2 {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 72px;
+  color: #fff;
+  margin: 10rem 0 1rem 0;
+}
+
+.header-marquee span{
+  display: inline-block;
+  font-size: 14px;
+  background: rgba(65, 175, 7, 0.6);
+  padding: 5px 32px;
+  line-height: 22px;
+}
+
+
+.marquee-anchors {
 }
