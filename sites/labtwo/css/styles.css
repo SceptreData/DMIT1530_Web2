@@ -1,0 +1,36 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  background: rgb(250, 250, 250);
+}
+
+.site-nav {
+  padding: 0.25rem 0.5rem;
+  background: rgb(36, 38, 41);
+  color: #b1b1b1;
+}
+
+.icon-view {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.5;
+  padding: .5rem;
+}
+
+.icon-view .icon {
+  width: 1rem;
+}
+
+.list-view {
+  display: none;
+}
+
+header {
+  color: white;
+  height: 80vh;
+  background: url(../img/witcher-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
