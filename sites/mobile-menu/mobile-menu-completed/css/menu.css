@@ -1,0 +1,63 @@
+.mobile-sub-menu {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 40px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  box-shadow: 0 0 5px 0 rgb(238, 238, 238);
+  padding: 2rem 1rem;
+  z-index: 0;
+}
+.show-mobile-menu {
+  left: 0px;
+  opacity: 1;
+  transition: left 0.3s ease-out, opacity 0.6s ease;
+}
+.hide-mobile-menu {
+  left: -100vh;
+  opacity: 0;
+  transition: left 0.3s ease-out, opacity 0.3s ease;
+}
+
+.mobile-menu-link {
+  line-height: 4rem;
+  margin-right: 4rem;
+  margin-left: 3rem;
+}
+.mobile-menu-link:nth-child(odd) {
+  border-top: 1px solid rgb(227, 227, 227);
+  border-bottom: 1px solid rgb(227, 227, 227);
+}
+.mobile-menu-link:hover {
+  background: rgb(250, 250, 250);
+}
+.mobile-menu-link a,
+.mobile-menu-link a:hover,
+.mobile-menu-link a:visited,
+.mobile-menu-link a:active {
+  color: grey;
+  text-decoration: none;
+  padding-left: 2rem;
+}
+.mobile-menu-link:hover a {
+  color: tomato;
+}
+.search {
+  margin-bottom: 2rem;
+}
+.search input {
+  border-radius: 6px;
+  height: 2.5rem;
+  background: rgb(252, 252, 252);
+  border: 1px solid rgb(237, 237, 237);
+  width: 100%;
+  font-size: 1rem;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-size: 1.4rem;
+  background-position: 0.75rem 0.5rem;
+  padding-left: 3rem;
+}
+::placeholder {
+  color: rgb(201, 201, 201);
+}
