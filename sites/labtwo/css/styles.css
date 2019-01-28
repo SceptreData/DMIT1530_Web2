@@ -33,4 +33,62 @@ header {
   background: url(../img/witcher-bg.jpg);
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width:940px){
+
+  h2 {
+    font-size: 2.8125rem;
+  }
+
+  .icon-view {
+    display: none;
+  }
+
+  .list-view {
+    font-weight: 700;
+    display:flex;
+    justify-content: space-around;
+    padding: 1rem 0.5rem;
+    margin: 0 auto;
+  }
+
+  .list-view img {
+    width: 8px;
+  }
+  
+  .list-view .branding {
+    width: 120px;
+  }
+
+  .nav-items {
+    width: 70%;
+    display: flex;
+  }
+
+  .nav-items li {
+    margin-right: 1rem;
+  }
+
+  .nav-items li:last-of-type {
+    margin-right: 0;
+  }
+
+  .action-items {
+    width: 15%;
+    display: flex;
+  }
+
+  .action-items li {
+    margin-right: 1rem;
+  }
+
+  .action-items li:last-of-type {
+    margin-right: 0;
+  }
 }

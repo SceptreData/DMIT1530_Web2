@@ -1,0 +1,11 @@
+@media (min-width:600px){
+   body {
+		background: blue;
+	}
+}
+
+@media (min-width:900px){
+	body{
+		background: tomato;
+	}
+}
