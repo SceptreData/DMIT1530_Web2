@@ -75,7 +75,8 @@ body {
 header {
   color: white;
   height: 80vh;
-  background: url(../img/witcher-bg.png);
+  background: linear-gradient( to bottom, transparent, rgb(124, 124, 124)),
+            url(../img/witcher-bg.png);
   background-color: #212b2d;
   background-position: center;
   background-size: cover;
@@ -93,8 +94,8 @@ header h2 {
 }
 
 header p{
-  font-size: 20px;
-  max-width: 650px;
+  font-size: 16px;
+  max-width: 660px;
   color: rgba(255,255,255);
   margin-bottom: 1.5rem;
 }
@@ -114,8 +115,8 @@ header p{
   text-decoration: none;
 }
 
-main {
-  background: #FFFFFF;
+.header-content {
+  background: rgba(255, 255, 255, 0.849);
   color: #59595f;
   display: flex;
   flex-direction: column;
@@ -124,24 +125,28 @@ main {
   margin: 0 auto;
 }
 
-main h2,
-main h3 {
+.header-content p {
+  color: #59595f;
+}
+
+.header-content h2,
+.header-content h3 {
   text-align: center;
   color: #505050;
 }
 
-main h2 {
+.header-content h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-main h3 {
+.header-content h3 {
   font-size: 1.5rem;
 }
 
-main img {
+.header-content img {
   width: 4rem;
-  margin: 3rem auto 2rem auto;
+  margin: 1rem auto 2rem auto;
 }
 
 .content-container {
@@ -163,6 +168,10 @@ main img {
 
   header h2 {
     font-size: 3rem;
+  }
+
+  header p {
+    font-size: 20px;
   }
 
   .icon-view {
@@ -227,5 +236,10 @@ main img {
   .content-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+  }
+
+  .content-container section {
+    width: 50%;
   }
 }

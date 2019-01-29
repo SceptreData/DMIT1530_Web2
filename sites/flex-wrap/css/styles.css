@@ -7,19 +7,26 @@ body {
 
 .flex-container {
   color: white;
-  font-size: 3rem;
+  font-size: 1rem;
   width: 80%;
   margin: 2rem auto;
   border: 1px solid lightblue;
   box-shadow: 0 0 8px 0 rgb(88, 86, 86);
   padding: 1rem;
+  text-align: center;
+}
+
+.flex-container p {
+  text-align: left;
+}
+.flex-container i {
+  font-size: 3rem;
 }
 .flex-container div {
   padding: 1rem;
 }
 .one {
   background: tomato;
-
 }
 
 .two {
@@ -37,17 +44,54 @@ body {
   background: magenta;
 }
 
-@media (min-width:900px){
+.six {
+  background: rgb(107, 126, 126);
+}
+
+div div { 
+  margin: .25rem .25rem;
+}
+
+
+@media (min-width: 600px){
   .flex-container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .flex-container div{
-    margin-right: .5rem;
+  div div {
+    flex: calc(50% - .5rem);
+  }
+}
+
+@media (min-width: 900px){
+  div div {
+    flex: calc(25% - .5rem);
   }
 
-  .flex-container div:last-of-type {
-    margin-right: 0;
+  .five {
+    flex: calc(75% - .5rem);
   }
+
+  .six {
+    flex: calc(25% - .5rem);
+  }
+}
+
+@media(min-width: 1000px){
+  div div {
+    margin: 0;
+    flex: 33%;
+  }
+
+  .four {
+    flex: 75%;
+  }
+
+  .five {
+    flex: 25%;
+  }
+
+  .six {
+    display:none;}
 }
