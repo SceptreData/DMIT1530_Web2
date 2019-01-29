@@ -10,6 +10,9 @@ body {
   padding: 0.25rem 0.5rem;
   background: rgb(36, 38, 41);
   color: #b1b1b1;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .site-nav a, 
@@ -187,8 +190,11 @@ main img {
     width: 120px;
   }
 
-  .nav-items {
+  .nav-item-container{
     width: 80%;
+  }
+
+  .nav-items {
     display: flex;
   }
 
