@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-size: 100%;
   line-height: 150%;
-  background: rgb(250, 250, 250);
+  background: #ffffff;
 }
 
 .site-nav {
@@ -12,11 +12,45 @@ body {
   color: #b1b1b1;
 }
 
+.site-nav a, 
+.site-nav a:visited{
+  text-decoration: none;
+  color: #b1b1b1;
+}
+
+.site-nav a:hover{
+  color: white;
+}
+
+.site-nav .branding,
+.site-nav .branding:visited {
+  font-size: 1.125rem;
+  color: white;
+}
+
+.site-nav .branding:hover{
+  color: grey;
+}
+
+
 .icon-view {
   display: flex;
   justify-content: space-between;
   line-height: 2.5;
   padding: .5rem;
+}
+
+.icon-view-action-items {
+  display: flex;
+  align-items: center;
+}
+
+.icon-view-action-items li{
+  margin-right: .75rem;
+}
+
+.icon-view-action-items li:last-of-type {
+  margin-right: 0;
 }
 
 .icon-view .icon {
@@ -27,10 +61,19 @@ body {
   display: none;
 }
 
+/* With regards to the Background Image: 
+  I tried to match the opacity effect they used
+  on the reference site using the technique found
+  here: https://css-tricks.com/snippets/css/transparent-background-images/
+  However, I could not separate the opacity effect from my text. I ended
+  up modifying the image in photoshop to get it closer to the original.
+*/
+
 header {
   color: white;
   height: 80vh;
-  background: url(../img/witcher-bg.jpg);
+  background: url(../img/witcher-bg.png);
+  background-color: #212b2d;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -38,12 +81,85 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
 }
 
-@media (min-width:940px){
+header h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
 
-  h2 {
-    font-size: 2.8125rem;
+header p{
+  font-size: 20px;
+  max-width: 650px;
+  color: rgba(255,255,255);
+  margin-bottom: 1.5rem;
+}
+
+.action-links a,
+.action-links a:visited {
+  color: rgb(243, 243, 243);
+  background: #2575dc;
+  border-radius: 30px;
+  padding: 1rem 1rem;
+  margin: 0 .5rem;
+}
+
+.action-links a:hover {
+  background: #205eaf;
+  transition: ease-in, 0.15s;
+  text-decoration: none;
+}
+
+main {
+  background: #FFFFFF;
+  color: #59595f;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+main h2,
+main h3 {
+  text-align: center;
+  color: #505050;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+main h3 {
+  font-size: 1.5rem;
+}
+
+main img {
+  width: 4rem;
+  margin: 3rem auto 2rem auto;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+.content-container section {
+  padding: 1rem 1.5rem;
+}
+
+.content-container p {
+  margin-bottom: 1rem;
+}
+/*
+    LARGE VIEWPORT
+    _______________*/
+
+@media (min-width:980px){
+
+  header h2 {
+    font-size: 3rem;
   }
 
   .icon-view {
@@ -54,25 +170,31 @@ header {
     font-weight: 700;
     display:flex;
     justify-content: space-around;
-    padding: 1rem 0.5rem;
+    padding: 1rem 3.5rem;
     margin: 0 auto;
   }
 
+  
   .list-view img {
     width: 8px;
   }
   
+  .list-view .icon {
+    width: 1rem;
+  }
+
   .list-view .branding {
     width: 120px;
   }
 
   .nav-items {
-    width: 70%;
+    width: 80%;
     display: flex;
   }
 
   .nav-items li {
     margin-right: 1rem;
+    min-width: 50px;
   }
 
   .nav-items li:last-of-type {
@@ -90,5 +212,14 @@ header {
 
   .action-items li:last-of-type {
     margin-right: 0;
+  }
+
+  .action-links {
+    padding: 1rem 1.5rem;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: row;
   }
 }
