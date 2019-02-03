@@ -14,8 +14,11 @@
   <link rel="stylesheet" href="css/reboot.css">
 
   <!-- Fonts and Icons -->
+  <!-- FontAwesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet"> 
+  <!-- MaterialDesign -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
   <!-- My Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"> 
@@ -26,7 +29,151 @@
 
 <body>
   <nav class="site-nav">
+    <ul class="icon-view">
+      <li>
+        <ul class="mobile-info-container">
+          <li>Free Shipping on Orders $50+</li>
+          <li>Call Us: +123.456.789</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="mobile-options-container">
+          <li>My Account<i class="material-icons">keyboard_arrow_down</i></li>
+          <li>USD<i class="material-icons">keyboard_arrow_down</i></li>
+          <li>En-Gb<i class="material-icons">keyboard_arrow_down</i></li>
+        </ul>
+      </li>
+      <li class="branding">RAVADO</li>
+      <li>
+        <ul class="mobile-navigation-container">
+          <li>Categories</li>
+          <li><i class="material-icons">menu</i></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="mobile-status-container">
+          <li><i class="material-icons">search</i></li>
+          <li><i class="material-icons">shopping_cart</i></li>
+          <li class="total-price">37.50</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="list-view">
+      <li>
+        <ul class="nav-list-top">
+          <li class="nav-list-info-container">
+            <ul>
+              <li>Free Shipping on Orders $50+</li>
+              <li>Call Us: +124.456.789</li>
+            </ul>
+          </li>
+          <li class="nav-list-options-container">
+            <ul>
+              <li>My Account<i class="material-icons">keyboard_arrow_down</i></li>
+              <li>USD<i class="material-icons">keyboard_arrow_down</i></li>
+              <li>En-Gb<i class="material-icons">keyboard_arrow_down</i></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-list-bot">
+        <ul>
+          <li class="branding">RAVADO</li>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Shop</li>
+          <li>Blog</li>
+          <li>Contact Us</li>
+          <li>
+            <ul class="nav-list-status-container">
+              <li><i class="material-icons">search</i></li>
+              <li><i class="material-icons">shopping_cart</i></li>
+              <li class="total-price">37.50</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </nav>
+
+  <aside id="mobile-sub-menu" class="mobile-sub-menu">
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </aside>
+
+  <aside id="account-sub-menu" class="account-sub-menu">
+    <ul>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </aside>
+
+  <aside id="currency-sub-menu" class="currency-sub-menu">
+    <ul>
+      <li>€ Euro</li>
+      <li>£ Pound Sterling</li>
+      <li>$ US Dollar</li>
+    </ul>
+  </aside>
+
+  <aside id="language-sub-menu" class="language-sub-menu">
+    <ul>
+      <li><i class="fab fa-canadian-maple-leaf"></i> English</li>
+      <li><i class="fas fa-pepper-hot"></i> Spanish</li>
+    </ul>
+  </aside>
+
+  <aside id="mobile-cart-menu" class="mobile-cart-menu">
+    <ul>
+      <li>
+        <img src="img/grinder-prod.jpg" alt="Grinder">
+        <p class="purchased-item-desc">Mocaccino Grinder</p>
+        <p class="purhcased-item-price">$19.99</p>
+      </li>
+      <li>
+        <img src="img/red-espresso-machine.jpg" alt="Espresso Machine">
+        <p class="purchased-item-desc">Espresso Machine</p>
+        <p class="purchased-item-price">$10.49</p>
+      </li>
+    </ul>
+  </aside>
+
+  <header>
+    <h1>Extraordinary Coffee</h1>
+    <p> Now Served in your home.</p>
+    <p> Get up to <br><em>30% OFF</em><br> select machines</p>
+    <p> The art of espresso now made simple.</p>
+    <p> <a href="#" class="shop-button">Shop Now</a></p>
+  </header>
+
+  <main>
+    <section class="content-box">
+      <i class="fas fa-coffee"></i>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dignissimos ea voluptate fugit quam sunt inventore nostrum ipsam sapiente, iste cumque numquam odio hic perspiciatis voluptates deleniti fuga corrupti nam.</p>
+    </section>
+    
+    <section class="content-box">
+      <i class="fas fa-coffee"></i>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dignissimos ea voluptate fugit quam sunt inventore nostrum ipsam sapiente, iste cumque numquam odio hic perspiciatis voluptates deleniti fuga corrupti nam.</p>
+    </section>
+
+    <section class="content-box">
+      <i class="fas fa-coffee"></i>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dignissimos ea voluptate fugit quam sunt inventore nostrum ipsam sapiente, iste cumque numquam odio hic perspiciatis voluptates deleniti fuga corrupti nam.</p>
+    </section>
+    
+    <section class="content-box">
+      <i class="fas fa-coffee"></i>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dignissimos ea voluptate fugit quam sunt inventore nostrum ipsam sapiente, iste cumque numquam odio hic perspiciatis voluptates deleniti fuga corrupti nam.</p>
+    </section>
+  </main>
+
 <script src="js/menu.js"></script>
 </body>
 
