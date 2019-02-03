@@ -1,0 +1,127 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 100%;
+  font-display: auto;
+  position:relative;
+}
+ /* 
+ Mobile Navigation Styles
+ */
+
+.site-nav{
+  box-shadow: 0 0 5px 0 rgb(173, 173, 173);
+  border-bottom:1px solid rgb(171, 171, 171);
+  padding:0.5rem;
+  position:fixed;
+  background:white;
+  width:100%;
+  z-index: 100;
+  user-select: none;
+  cursor: pointer;
+}
+.icon-view{
+  display:flex;
+  justify-content: space-between;
+  color:rgb(93, 93, 93);
+}
+.mobile-settings-menu{
+ position:fixed;
+ top:48px;
+ right:0;
+ background:#fff;
+ width: 20rem;
+ box-shadow:  0 0 5px 0 rgb(192, 192, 192);;
+}
+.mobile-settings-menu h2{
+  text-align: center;
+  padding: 1rem;
+}
+.shopping-links{
+  color: grey;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+}
+.shopping-links:hover{
+  background:rgb(248, 248, 248);
+}
+.shopping-links li{
+  border-bottom: 1px solid rgb(232, 232, 232);
+  padding: 1rem; 
+}
+.shopping-links li:hover{
+  background: rgb(237, 237, 237);
+  color:tomato;
+}
+.shopping-links li:last-of-type{
+  border:none;
+}
+.hidden{
+  display: none;
+}
+
+
+
+.mobile-sub-menu{
+  position: fixed;
+  top:3rem;
+  background:#fff;
+  padding: 1rem;
+  width:100%;
+  height:55vh;
+  top: -55vh;
+  border-bottom:2px solid grey;
+}
+
+
+
+
+
+
+ /* Page Header Styles*/
+ 
+.page-header{
+ 
+  height:40vh;
+  background:tomato;
+}
+ 
+ 
+/* PAGE CONTENT STYLES */
+main{
+ 
+}
+.content-section{
+margin: 2rem 0  ;
+padding: 3rem 0.5rem;
+}
+.content-section:nth-child(even){
+  background:rgb(243, 243, 243);
+}
+.content-section header{
+  font-size:2rem;
+  text-align:center;
+  margin-bottom:1.5rem;
+}
+.content-section p{
+  color:#888;
+  margin-bottom: 1.5rem;
+}
+ 
+/* MOBILE MENU STYLES */
+#mobile-sub-menu{
+ 
+}
+/*  */
+ .menu-init{
+ 
+}
+/*  */
+.mobile-sub-menu{
+ 
+}
