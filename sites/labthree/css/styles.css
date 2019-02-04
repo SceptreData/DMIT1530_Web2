@@ -9,6 +9,7 @@ body {
 .site-nav {
   background: #202226;
   color: #fff;
+  margin-bottom: 40px;
 }
 
 /* Mobile View */
@@ -181,4 +182,31 @@ body {
   border-radius: 0 0 3px 3px;
   border: 1px solid rgb(219, 219, 219);
   box-shadow: 5px 5px 10px rgb(31, 31, 31);
+}
+
+header {
+  margin: 0 auto;
+  background-image: url(../img/espresso-slider-2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 95%;
+  min-height: 408px;
+}
+
+@media(min-width: 590px){
+
+}
+
+@media(min-width: 720px){
+
+}
+
+@media(min-width: 1000px){
+    .icon-view {
+    display: none;
+  }
+  .list-view {
+    display: block;
+    font-size: 15px;
+  }
 }
