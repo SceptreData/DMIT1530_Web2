@@ -92,14 +92,6 @@ window.addEventListener("DOMContentLoaded", function (event) {
             TweenMax.to(mainMenu, 1.2, { top: "224px", ease: Power4.easeOut,
                 opacity: 1 });
         }
-        // }
-        // if (wasToggled) {
-        //     TweenMax.to(mainMenu, 0.8, { top: "203px", ease: Power4.easeOut,
-        //         opacity: 0.1 });
-        // } else {
-        //     TweenMax.to(mainMenu, 0.8, { top: "223px", ease: Power4.easeOut,
-        //         opacity: 1 });
-        // }
     }
    
     registerMouseLeaveEvent(mainMenu);
