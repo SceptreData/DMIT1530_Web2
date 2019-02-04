@@ -15,7 +15,7 @@
 
   <!-- Fonts and Icons -->
   <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- MaterialDesign -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -43,13 +43,13 @@
       <li>
         <ul class="mobile-options-container">
           <li>
-            <a href="#" id="account-btn" class="account-btn">My Account<i class="material-icons caret-down">keyboard_arrow_down</i></a>
+            <a href="#" id="account-menu-button" class="account-menu-button">My Account<i class="material-icons caret-down">keyboard_arrow_down</i></a>
           </li>
           <li>
-            <a href="#" id="currency-btn" class="currency-btn">USD<i class="material-icons caret-down">keyboard_arrow_down</i></a>
+            <a href="#" id="currency-menu-button" class="currency-menu-button">USD<i class="material-icons caret-down">keyboard_arrow_down</i></a>
           </li>
           <li>
-            <a href="#" id="language-btn" class="language-btn">En-Gb<i class="material-icons caret-down">keyboard_arrow_down</i></a>
+            <a href="#" id="language-menu-button" class="language-menu-button">En-Gb<i class="material-icons caret-down">keyboard_arrow_down</i></a>
           </li>
         </ul>
       </li>
@@ -124,14 +124,14 @@
     </ul>
   </aside>
 
-  <aside id="account-sub-menu" class="account-sub-menu hidden">
+  <aside id="account-sub-menu" class="account-sub-menu dropdown hidden">
     <ul>
       <li><a href="#">Register</a></li>
       <li><a href="#">Login</a></li>
     </ul>
   </aside>
 
-  <aside id="currency-sub-menu" class="currency-sub-menu hidden">
+  <aside id="currency-sub-menu" class="currency-sub-menu dropdown hidden">
     <ul>
       <li>€ Euro</li>
       <li>£ Pound Sterling</li>
@@ -139,14 +139,14 @@
     </ul>
   </aside>
 
-  <aside id="language-sub-menu" class="language-sub-menu hidden">
+  <aside id="language-sub-menu" class="language-sub-menu dropdown hidden">
     <ul>
       <li><i class="fab fa-canadian-maple-leaf"></i> English</li>
       <li><i class="fas fa-pepper-hot"></i> Spanish</li>
     </ul>
   </aside>
 
-  <aside id="mobile-cart-menu" class="mobile-cart-menu hidden">
+  <aside id="mobile-cart-menu" class="mobile-cart-menu dropdown hidden">
     <ul>
       <li>
         <img src="img/grinder-prod.jpg" alt="Grinder">

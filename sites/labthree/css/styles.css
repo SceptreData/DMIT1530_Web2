@@ -142,10 +142,11 @@ body {
   position:absolute;
   padding: 1rem;
   left: 2.5%;
-  top: 223px;
+  top: 220px;
   border: 1px solid grey;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  opacity: 0;
 }
 
 .mobile-sub-menu li{
@@ -169,5 +170,15 @@ body {
 
 .mobile-sub-menu a:hover {
   color: #c7a17a;
-  transition: 0.2s;
+  transition: 0.1s;
+}
+
+.dropdown{
+  background: #fff;
+  color: black;
+  position: absolute;
+  padding: 1rem;
+  border-radius: 0 0 3px 3px;
+  border: 1px solid rgb(219, 219, 219);
+  box-shadow: 5px 5px 10px rgb(31, 31, 31);
 }
