@@ -1,15 +1,19 @@
 window.addEventListener("DOMContentLoaded", function (event) {
     // Generic Function for drop down menus.
     // You can tell I wrote it because it isn't any good.
-    function toggleMenu (targetMenu, target){
+    function toggleMenu (targetMenu, target, shiftLeft = false){
         // Get Dimensions of Target Element
-        var buttonDimensions = target.getBoundingClientRect();
+        let buttonDimensions = target.getBoundingClientRect();
 
         // Make sure our menu shows up in the right place.
         targetMenu.style.top   = buttonDimensions.bottom + 5 + "px";
-        targetMenu.style.left  = buttonDimensions.left + "px";
         targetMenu.style.opacity = 0;
-        
+        if (shiftLeft){
+            targetMenu.style.left = (buttonDimensions.left - 100) + "px";
+        } else {
+            targetMenu.style.left  = buttonDimensions.left + "px";
+        }
+
         // BEHOLD
         // The menu
         targetMenu.classList.toggle('hidden');
@@ -61,6 +65,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
     // Shopping Cart Menu
     const cartMenu = document.querySelector("#mobile-cart-menu");
     const cartOpenButton = document.querySelector("#mobile-cart-button");
+    const listCartButton = document.querySelector('#list-cart-button');
 
     //  Here we add event listeners for our drop down menus.
     accountOpenButton.addEventListener('click',function(e){
@@ -80,7 +85,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
     registerMouseLeaveEvent(languageMenu);
     
     cartOpenButton.addEventListener('click',function(e){
-        toggleMenu(cartMenu, e.currentTarget);
+        toggleMenu(cartMenu, e.currentTarget, true);
     });
     registerMouseLeaveEvent(cartMenu);
 
@@ -95,6 +100,10 @@ window.addEventListener("DOMContentLoaded", function (event) {
 
     listViewLanguageButton.addEventListener('click', function(e) {
         toggleMenu(languageMenu, e.currentTarget);
+    });
+
+    listCartButton.addEventListener('click', function(e) {
+        toggleMenu(cartMenu, e.currentTarget, true)
     });
 
     

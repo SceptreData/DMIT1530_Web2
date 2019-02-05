@@ -101,7 +101,7 @@
           <li class="nav-list-status-container">
             <ul class="nav-list-status-items">
               <li><a href="#"><i class="material-icons">search</i></a></li>
-              <li class="cart-container"><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+              <li id="list-cart-button" class="cart-container"><a href="#"><i class="material-icons">shopping_cart</i></a></li>
               <li class="total-price cart-container">37.50</li>
             </ul>
           </li>
@@ -129,30 +129,34 @@
 
   <aside id="currency-sub-menu" class="currency-sub-menu dropdown hidden">
     <ul>
-      <li>€ Euro</li>
-      <li>£ Pound Sterling</li>
-      <li>$ US Dollar</li>
+      <li><a href="#">€ Euro</a></li>
+      <li><a href="#">£ Pound Sterling</a></li>
+      <li><a href="#">$ US Dollar</a></li>
     </ul>
   </aside>
 
   <aside id="language-sub-menu" class="language-sub-menu dropdown hidden">
     <ul>
-      <li><i class="fab fa-canadian-maple-leaf"></i> English</li>
-      <li><i class="fas fa-pepper-hot"></i> Spanish</li>
+      <li><a href="#"><i class="fab fa-canadian-maple-leaf"></i> English</a></li>
+      <li><a href="#"><i class="fas fa-pepper-hot"></i> Spanish</a></li>
     </ul>
   </aside>
 
-  <aside id="mobile-cart-menu" class="mobile-cart-menu dropdown hidden">
+  <aside id="mobile-cart-menu" class="cart-menu dropdown hidden">
     <ul>
-      <li>
-        <img src="img/grinder-prod.jpg" alt="Grinder">
-        <p class="purchased-item-desc">Mocaccino Grinder</p>
-        <p class="purhcased-item-price">$19.99</p>
+      <li class="cart-item">
+        <a href="#">
+          <img src="img/grinder-prod.jpg" alt="Grinder">
+          <p class="purchased-item-desc">Mocaccino Grinder</p>
+          <p class="purchased-item-price">$19.99</p>
+        </a>
       </li>
-      <li>
-        <img src="img/red-espresso-machine.jpg" alt="Espresso Machine">
-        <p class="purchased-item-desc">Espresso Machine</p>
-        <p class="purchased-item-price">$10.49</p>
+      <li class="cart-item">
+        <a href="#"></a>
+          <img src="img/red-espresso-machine.jpg" alt="Espresso Machine">
+          <p class="purchased-item-desc">Espresso Machine</p>
+          <p class="purchased-item-price">$10.49</p>
+        </li>
       </li>
     </ul>
   </aside>
@@ -168,21 +172,25 @@
   <main>
     <section class="content-box">
       <i class="fas fa-coffee"></i>
+      <h3>We have coffee</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dignissimos ea voluptate fugit quam sunt inventore nostrum ipsam sapiente, iste cumque numquam odio hic perspiciatis voluptates deleniti fuga corrupti nam.</p>
     </section>
     
     <section class="content-box">
       <i class="fas fa-utensils"></i>
+      <h3>We have forks</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dignissimos ea voluptate fugit quam sunt inventore nostrum ipsam sapiente, iste cumque numquam odio hic perspiciatis voluptates deleniti fuga corrupti nam.</p>
     </section>
 
     <section class="content-box">
       <i class="fas fa-smile"></i>
+      <h3>Dishonest Smiles</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dignissimos ea voluptate fugit quam sunt inventore nostrum ipsam sapiente, iste cumque numquam odio hic perspiciatis voluptates deleniti fuga corrupti nam.</p>
     </section>
     
     <section class="content-box">
       <i class="fas fa-cookie-bite"></i>
+      <h3>Pre-nibbled Cookies</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dignissimos ea voluptate fugit quam sunt inventore nostrum ipsam sapiente, iste cumque numquam odio hic perspiciatis voluptates deleniti fuga corrupti nam.</p>
     </section>
   </main>

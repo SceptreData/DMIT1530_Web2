@@ -87,6 +87,7 @@ body {
   max-width: 144px;
 }
 
+/* MAIN NAV MENU */
 .mobile-nav-container{
   margin: 0 auto;
   width: 95%;
@@ -173,6 +174,8 @@ body {
   color: #c7a17a;
   transition: 0.1s;
 }
+/* Dropdown MENU STYLES */
+/***********************/
 
 .dropdown{
   background: #fff;
@@ -183,6 +186,48 @@ body {
   border: 1px solid rgb(219, 219, 219);
   box-shadow: 5px 5px 10px rgb(31, 31, 31);
 }
+
+.dropdown a,
+.dropdown a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown a:hover {
+  color: #c7a17a;
+  transition: 0.2s;
+}
+
+/* CART MENU STYLES */
+/* ******************/
+.cart-menu {
+  margin-right: 10%;
+}
+
+.cart-item {
+  max-height: 60vh;
+  border-bottom: 2px solid rgb(87, 87, 87);
+  margin-bottom: 5px;
+}
+
+.cart-item:last-of-type{
+  border:0;
+  margin-bottom: 0;
+}
+.cart-item img {
+  max-width: 300px;
+  padding: 10px;
+  border-bottom: 1px dotted #A08265
+}
+
+.purchased-item-desc {
+  font-weight: 700;
+}
+
+.purchased-item-price {
+  font-style: italic;
+}
+
 
 header {
   margin: 0 auto;
@@ -208,6 +253,9 @@ em {
   font-size: 36px;
 }
 
+header {
+  margin-bottom: 3rem;
+}
 header .big-text {
   font-size: 24px;
   padding: .25rem;
@@ -217,18 +265,78 @@ header p {
   font-size: 15px;
   line-height: 1.5;
 }
+header p:last-of-type {
+  line-height: 48px;
+}
 
 header a,
 header a:visited {
-  padding: 5px 0;
+  padding: 10px 5px;
+  background: rgb(39, 37, 37);
+  color: #fff;
+  border-radius: 4px;
+}
+
+header a:hover {
+  text-decoration: none;
+  background: #c7a17a;
+  transition: 0.2s;
+}
+
+main {
+  margin: 0 auto;
+  width: 95%;
+  background: rgb(236, 201, 113);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.content-box {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-box i {
+  font-size: 36px;
+}
+.content-box h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.content-box p{
+  text-align: left;
+}
+
+@media (min-width: 400px){
+  .content-box {
+    flex: 50%;
+  }
+  .content-box h3 {
+    font-size: 18px;
+  }
 }
 
 @media(min-width: 590px){
+  
+  .content-box {
+    flex: 33%;
+    max-width: 222px;
+  }
 
+  .content-box:last-of-type{
+    margin: 0 auto;
+  }
 }
 
 @media(min-width: 720px){
-
+  main {
+    max-width: 1000px;
+  }
+  .content-box{
+    flex: 25%;
+  }
 }
 
 @media(min-width: 1000px){
@@ -319,5 +427,8 @@ header a:visited {
     font-size: 18px;
   }
 
-
+  .cart-menu {
+    width: 20%;
+    max-width: 300px;
+  }
 }
