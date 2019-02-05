@@ -186,11 +186,41 @@ body {
 
 header {
   margin: 0 auto;
-  background-image: url(../img/espresso-slider-2.jpg);
-  background-size: cover;
-  background-position: center;
+  background: url(../img/espresso-slider-2.jpg) no-repeat center/cover;
   width: 95%;
-  min-height: 408px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 4rem;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+em {
+  font-size: 36px;
+}
+
+header .big-text {
+  font-size: 24px;
+  padding: .25rem;
+}
+
+header p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+header a,
+header a:visited {
+  padding: 5px 0;
 }
 
 @media(min-width: 590px){
@@ -202,11 +232,92 @@ header {
 }
 
 @media(min-width: 1000px){
-    .icon-view {
+  .icon-view {
     display: none;
   }
   .list-view {
     display: block;
     font-size: 15px;
   }
+  .list-view i {
+    font-size: 12px;
+  }
+  
+  .nav-list-top-container {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+  }
+  .nav-list-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 75px;
+  }
+
+  .nav-list-top span {
+    margin: 10px 9px 0 0;
+  }
+
+  .list-view-shipping::after,
+  .list-account-menu::after,
+  .list-currency-menu::after {
+    margin-left: 18px;
+    content: "|";
+    color: #a6a6a6;
+  }
+
+  .nav-list-bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 75px;
+  }
+
+  .nav-list-bot .branding {
+    margin-right: auto;
+    padding: 21px 0;
+  }
+
+  .nav-list-bot a,
+  .nav-list-bot a:visited {
+    text-transform: uppercase;
+    transition: 0.2s;
+  }
+
+  .nav-list-bot span {
+    padding: 29px 19px;
+  }
+
+  .nav-list-status-container {
+    margin-left: auto;
+  }
+
+  .nav-list-status-items {
+    display: flex;
+    align-items: center;
+    align-content: middle;
+    padding-right: 25px; 
+  }
+
+  .nav-list-status-items i {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  header .big-text {
+    font-size: 42px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+
 }

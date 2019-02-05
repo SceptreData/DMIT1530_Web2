@@ -77,31 +77,31 @@
     </ul>
 
     <ul class="list-view">
-      <li>
+      <li class="nav-list-top-container">
         <ul class="nav-list-top">
           <li class="nav-list-info-container">
-            <span>Free Shipping on Orders $50+</span>
-            <span>Call Us: +124.456.789</span>
+            <span class="list-view-shipping">Free Shipping on Orders $50+</span>
+            <span class="list-view-phone">Call Us: +124.456.789</span>
           </li>
           <li class="nav-list-options-container">
-            <span><a>My Account<i class="material-icons">keyboard_arrow_down</i></a></span>
-            <span><a>USD<i class="material-icons">keyboard_arrow_down</i></a></span>
-            <span><a>En-Gb<i class="material-icons">keyboard_arrow_down</i></a></span>
+            <span class="list-account-menu"><a id="list-view-account-button" class="list-view-account-button" href="#">My Account<i class="material-icons">keyboard_arrow_down</i></a></span>
+            <span class="list-currency-menu"><a id="list-view-currency-button" class="list-view-currency-button" href="#">USD<i class="material-icons">keyboard_arrow_down</i></a></span>
+            <span class="list-language-menu"><a id="list-view-language-button" class="list-view-language-button" href="#">En-Gb<i class="material-icons">keyboard_arrow_down</i></a></span>
           </li>
         </ul>
       </li>
-      <li class="nav-list-bot">
-        <ul>
-          <li class="branding">RAVADO</li>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Shop</li>
-          <li>Blog</li>
-          <li>Contact Us</li>
-          <li>
-            <ul class="nav-list-status-container">
-              <li><i class="material-icons">search</i></li>
-              <li class="cart-container"><i class="material-icons">shopping_cart</i></li>
+      <li>
+        <ul class="nav-list-bot">
+          <li class="branding"><a href="#"><img src="img/logo.png" alt="Ravado Logo"></a></li>
+          <a href="#"><span>Home</span></a>
+          <a href="#"><span>About Us</span></a>
+          <a href="#"><span>Shop</span></a>
+          <a href="#"><span>Blog</span></a>
+          <a href="#"><span>Contact Us</span></a>
+          <li class="nav-list-status-container">
+            <ul class="nav-list-status-items">
+              <li><a href="#"><i class="material-icons">search</i></a></li>
+              <li class="cart-container"><a href="#"><i class="material-icons">shopping_cart</i></a></li>
               <li class="total-price cart-container">37.50</li>
             </ul>
           </li>
@@ -159,7 +159,7 @@
 
   <header>
     <h1>Extraordinary Coffee</h1>
-    <p> Now Served in your home.</p>
+    <p class="big-text"> Now Served in your home.</p>
     <p> Get up to <br><em>30% OFF</em><br> select machines</p>
     <p> The art of espresso now made simple.</p>
     <p> <a href="#" class="shop-button">Shop Now</a></p>

@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", function (event) {
     // Generic Function for drop down menus.
-    // You can tell I wrote it because it probably isn't any good.
+    // You can tell I wrote it because it isn't any good.
     function toggleMenu (targetMenu, target){
         // Get Dimensions of Target Element
         var buttonDimensions = target.getBoundingClientRect();
@@ -46,14 +46,17 @@ window.addEventListener("DOMContentLoaded", function (event) {
     // Account Options  Menu (Register/Login)
     const accountMenu = document.querySelector('#account-sub-menu');
     const accountOpenButton = document.querySelector('#account-menu-button');
+    const listViewAccountButton = document.querySelector('#list-view-account-button');
 
     // Currency Selector Menu
     const currencyMenu = document.querySelector('#currency-sub-menu');
     const currencyOpenButton = document.querySelector('#currency-menu-button');
+    const listViewCurrencyButton = document.querySelector('#list-view-currency-button');
 
     // Language Type Menu
     const languageMenu = document.querySelector('#language-sub-menu');
     const languageOpenButton = document.querySelector('#language-menu-button');
+    const listViewLanguageButton = document.querySelector('#list-view-language-button');
 
     // Shopping Cart Menu
     const cartMenu = document.querySelector("#mobile-cart-menu");
@@ -70,6 +73,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
     });
     registerMouseLeaveEvent(currencyMenu);
 
+
     languageOpenButton.addEventListener('click',function(e){
         toggleMenu(languageMenu, e.currentTarget);
     });
@@ -79,6 +83,20 @@ window.addEventListener("DOMContentLoaded", function (event) {
         toggleMenu(cartMenu, e.currentTarget);
     });
     registerMouseLeaveEvent(cartMenu);
+
+    // List View buttons
+    listViewAccountButton.addEventListener('click', function(e) {
+        toggleMenu(accountMenu, e.currentTarget);
+    });
+
+    listViewCurrencyButton.addEventListener('click', function(e) {
+        toggleMenu(currencyMenu, e.currentTarget);
+    });
+
+    listViewLanguageButton.addEventListener('click', function(e) {
+        toggleMenu(languageMenu, e.currentTarget);
+    });
+
     
     /* This menu has it's own section even though it probably doesn't need it. */
     menuOpenButton.onclick = (e) => {
