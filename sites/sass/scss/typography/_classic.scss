@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$main_font:  "Roboto", sans-serif;
+$font_color: red;
+$dark_theme: rgb(73, 72, 80);
+$big_header: 6rem;
+
+body {
+    text-align: center;
+    color: $font_color;
+    background:$dark_theme;
+    font-family: $main_font;
+}
+
+h1 {
+    font-size: $big_header;
+}

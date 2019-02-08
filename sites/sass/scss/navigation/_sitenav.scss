@@ -1,0 +1,27 @@
+.site-nav{
+    background: rgb(236, 229, 229);
+    border-bottom: 1px solid rgb(100, 99, 99);
+    box-shadow: 0 0 7px 0 grey;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    color: black;
+
+    .list-view {
+        display: none;
+    }
+    .icon-view {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media(min-width: 600px){
+        .list-view {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .icon-view {
+            display: none;
+        }
+    }
+}
