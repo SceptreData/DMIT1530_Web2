@@ -1,0 +1,4 @@
+@mixin shadow-box($size, $border-color, $shadow-color, $bg-color) {
+    box-shadow: 0 0 5px 0 $shadow-color;
+    border: $size solid $bg-color;
+}

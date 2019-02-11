@@ -1,0 +1,16 @@
+%uibutton {
+    background: white;
+    border-radius: 7px;
+    color: #999;
+    padding: 0.25rem 1rem;
+    box-shadow: 0 0 5px 0 grey;
+    font-size: calc(1rem + 1vw);
+}
+
+%call-to-action {
+    @extend %uibutton;
+    font-size: calc(1.5rem + 1vw);
+    background: crimson;
+    color: white;
+
+}

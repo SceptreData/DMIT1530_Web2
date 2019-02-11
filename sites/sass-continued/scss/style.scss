@@ -1,0 +1,21 @@
+@import "mixins/index";
+@import "init/index";
+@import "ui/index";
+
+body {
+    @include background-color(tomato);
+}
+
+div {
+    padding: 2rem;
+    margin: 2rem;
+    @include shadow-box(2px, grey, grey, green);
+}
+
+button {
+    @extend %uibutton;
+}
+
+.call {
+    @extend %call-to-action;
+}
