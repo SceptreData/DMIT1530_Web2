@@ -17,7 +17,7 @@
 
   <!-- Fonts and Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet"> 
 
   <!-- My Fonts -->
   <link rel="stylesheet" href="css/styles.css">
@@ -58,8 +58,12 @@
 
         <ul class="quiz-details">
           <li class="quiz-thumbnail">
-            <i class="far fa-eye quiz-icon"></i>
-            <img src="" alt="">
+            <div class="quiz-thumbnail-circle red">
+              <a href="#">
+                <i class="fas fa-glasses"></i>
+              </a>
+            </div>
+            <img src="img/breaking-bad-thumb.jpg" alt="Breaking Bad Quiz">
           </li>
           <li class="quiz-title">
             <h2>Which Breaking Bad character are you?</h2>
@@ -68,12 +72,14 @@
             <p>Do you enjoy your breakfast? Or are you more accustomed to wearing head to tail yellow gear?</p>
           </li>
           <li class="quiz-call-to-action">
-            <span class="play-button"><a href="#"></a>Play Now</a></span>
-            <span class="share-button"><a href="#"><i class="fas fa-share-square"></i></a></span>
+            <a href="#" class="play-button">Play Now</a>
+            <span class="share-circle">
+              <a href="#" class="share-button"><i class="fas fa-share-square"></i></a>
+            </span>
           </li>
           <li class="quiz-stats">
-            <span class="quiz-view-count"></span>
-            <span class="quiz-like-count"></span>
+            <span class="quiz-view-count"><i class="fas fa-eye"></i> 15K Views</span>
+            <span class="quiz-like-count"><i class="fas fa-thumbs-up"></i> 249 Likes</span>
           </li>
         </ul>
       </aside>

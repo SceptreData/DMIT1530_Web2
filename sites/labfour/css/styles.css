@@ -17,7 +17,7 @@ body {
 }
 
 .branding {
-  font-weight: 700;
+  font-weight: 600;
 }
 a,
 a:visited {
@@ -37,10 +37,15 @@ a:hover {
 .quiz-card {
   position:relative;
   max-width: 300px;
+  min-height: 450px;
+  min-width: 250px;
   margin: 0 auto;
+  box-shadow: 0 0 5px  rgba(219, 219, 219, 0.527);
+  overflow: hidden;
 }
 
 .quiz-bg-img{
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -51,7 +56,7 @@ a:hover {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 1.2rem;
+  top: 1rem;
   left: 1rem;
 }
 
@@ -69,15 +74,91 @@ a:hover {
   background: #fff;
   margin-right: 1rem;
 }
-/* .quiz-card .logo-circle {
-}
-.quiz-card h3 {
-  color: #fff;
-  position: absolute;
-  top: 10px;
-  left: 0;
-} */
 
+.quiz-details {
+  position: absolute;
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center; */
+  top: 65px;
+  left: 5%;
+  max-width: 90%;
+  height: 375px;
+}
+
+.quiz-thumbnail {
+  position: relative;
+}
+
+.quiz-thumbnail-circle{
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red {background: #DB5039;}
+
+.quiz-thumbnail-icon  {
+  color: rgb(196, 192, 192);
+  transition: .25s;
+}
+
+.quiz-thumbnail img {
+  border: 3px solid white;
+  max-width: 270px;
+}
+
+.quiz-title h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+.quiz-description{
+  font-weight: 400;
+  font-size: .7rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.play-button {
+  border: 1px solid white;
+  font-size: .70rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: .5rem 2rem;
+  border-radius: 20px;
+  margin-right: .5rem;
+}
+
+.share-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.share-button {
+  font-size: .8rem;
+}
+
+.quiz-stats {
+  width: 100%;
+  border-top: 1px solid rgba(231, 228, 228, 0.603);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: .75rem;
+}
 
 @media (min-width: 400px){
 }
@@ -105,12 +186,14 @@ a:hover {
   }
 
   .list-view .branding {
-    font-size: 2.5rem;
+    padding-left: 0;
+    font-size: 2rem;
     margin-right: auto;
   }
 
 
   .list-view .register {
     margin-left: auto;
+    padding-right: 0;
   }
 }
