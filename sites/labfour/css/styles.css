@@ -34,18 +34,23 @@ a:hover {
   display: none;
 }
 
+.quizzes{
+}
+
 .quiz-card {
   position:relative;
   max-width: 300px;
   min-height: 450px;
-  min-width: 250px;
+  min-width: 275px;
   margin: 0 auto;
   box-shadow: 0 0 5px  rgba(219, 219, 219, 0.527);
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .quiz-bg-img{
   object-fit: cover;
+  max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -81,7 +86,7 @@ a:hover {
   flex-direction: column; */
   /* align-items: center; */
   top: 65px;
-  left: 5%;
+  margin: 0 5%;
   max-width: 90%;
   height: 375px;
 }
@@ -101,9 +106,6 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-
-.red {background: #DB5039;}
-
 .quiz-thumbnail-icon  {
   color: rgb(196, 192, 192);
   transition: .25s;
@@ -111,7 +113,7 @@ a:hover {
 
 .quiz-thumbnail img {
   border: 3px solid white;
-  max-width: 270px;
+  max-width: 100%;
 }
 
 .quiz-title h2 {
@@ -196,4 +198,15 @@ a:hover {
     margin-left: auto;
     padding-right: 0;
   }
+}
+
+/* Utility Functions */
+.red-bg {background: #DB5039;}
+.red-font {color: #DB5039;}
+
+.teal-bg{
+
+}
+
+.teal-font {
 }

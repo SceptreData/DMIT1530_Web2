@@ -1,0 +1,60 @@
+@supports (grid-area: auto) {
+  /* 	 
+		Setting up grid 
+		display: grid;
+		-- immediate children become grid items
+		it is made up of 
+			grid-rows
+            grid columns 
+            you can SPAN grid items
+            
+            to define a grid:
+            grid-template-columns
+            grid-template-rows
+            grid-template-area**
+            "nav nav nav"
+            "header main sidebar"
+            "footer footer footer"
+            */
+  .layout {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    margin: .25rem;
+    grid-gap: .2rem;
+  }
+  @media (min-width: 600px) {
+    .layout {
+          grid-template-areas: "a b" "c d" "c f";
+    }
+  }
+  /*
+     @media (min-width: 600px){
+         .layout {
+             display: grid;
+             grid-template-columns: 1fr 1fr 1fr;
+             grid-gap: 1rem;
+         }
+     }
+ 
+    .site-nav {
+    }
+*/
+  .site-nav {
+    grid-area: a;
+  }
+  .header-content {
+    grid-area: d;
+  }
+  .main-content {
+    grid-area: b;
+  }
+  .sidebar-content {
+    grid-area: f;
+  }
+  .footer-content {
+    grid-area: c;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

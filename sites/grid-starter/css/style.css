@@ -1,0 +1,30 @@
+@supports(grid-area: auto) {
+/* 	 
+		Setting up grid 
+		display: grid;
+		-- immediate children become grid items
+		it is made up of 
+			grid-rows
+			grid columns */
+	.layout {
+	}
+ 
+    .site-nav {
+ 
+ 
+	}
+
+	.header-content {
+ 
+	}
+
+	.main-content {
+		 
+	}
+
+	.sidebar-content {}
+
+	.footer-content {
+	 
+	}
+}
