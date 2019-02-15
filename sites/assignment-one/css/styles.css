@@ -39,6 +39,7 @@ header p {
 
 main {
   margin-top: -160px;
+  margin-bottom: 170px;
 }
 
 h2 {
@@ -167,6 +168,193 @@ h2 {
 .four-col-container section {
   width: 270px;
 }
+
+/*
+   Rusty Car Section
+----------------------- */
+.rusty-car-container {
+  color: white;
+  height: 875px;
+  background: url(../img/english-car.jpg) top/cover no-repeat;
+  margin-bottom: 125px;
+}
+
+.rusty-car-content {
+  padding-top: 450px;
+}
+
+.rusty-car-content h2 {
+  line-height: 1.4;
+  color: white;
+  font-size: 60px;
+  font-weight: 300;
+  /* width: 500px; */
+  max-width: 510px;
+  margin-bottom: 42px;
+}
+
+.rusty-car-content p {
+  max-width: 441px;
+  margin-bottom: 28px;
+  font-size: 13px;
+}
+
+.rusty-actions a,
+.rusty-actions a:visited {
+  font-family: 'Young Serif', serif;
+  color: white;
+  position: static;
+}
+
+.rusty-actions a:hover {
+  color: gold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+/*
+   Reasons Sections
+---------------------*/
+.reasons-container{
+  color: #192431;
+  font-size: 13px;
+}
+
+.reasons-container h3 {
+  font-size: 35px;
+  font-weight: 300;
+  color: #192431;
+  margin-bottom: 70px;
+}
+
+.reasons-container h4 {
+  color: #192431;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.three-col-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.three-col-layout section {
+  width: 370px;
+}
+
+/* 
+   Footer
+---------------------*/
+
+footer {
+  background: #192431;
+  color: #f6f7fa;
+  height: 382px;
+  font-size: 13px;
+}
+
+.footer-content {
+  padding-top: 125px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content h4 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.get-in-touch-container {
+  width: 570px;
+  margin-right: 130px;
+}
+
+.stay-in-touch-container {
+  width: 470px;
+  color: #57697f;
+}
+.stay-in-touch-header {
+  line-height: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+}
+
+.icon-circle:hover {
+  background: white;
+  transition: 0.3s;
+}
+
+.social-icons i {
+  font-size: 1.25rem;
+  color: #192431;
+}
+.social-icons a,
+.social-icons a:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  text-decoration: none;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.input-container input {
+  width: 400px;
+  height: 60px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.input-container button {
+  font-size: 1.5rem;
+  color: white;
+  width: 70px;
+  height: 60px;
+  background: #82ca9c;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.input-container button:hover {
+  color: gold;
+  transition: 0.2s;
+  box-shadow: 0 0 5px grey;
+}
+
+.stay-in-touch-container h4 {
+  color: #f6f7fa;
+}
+.stay-in-touch-container p {
+  font-size: 12px;
+}
+
 /* Color classes */
 
 .pink-bg {
@@ -180,8 +368,24 @@ h2 {
 .green-bg{
   background: #82ca9c;
 }
+
+.darker-blue-bg {
+  background: #38548f;
+}
+
+.aqua-bg {
+  background: #32cdfb;
+}
+
+.light-blue-bg {
+  background: #2686b9;
+}
 /* Utility Classes */
 .center {
   margin: 0 auto;
   max-width: 1170px;
+}
+
+.italic-text {
+  font-style: italic;
 }
