@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Young Serif';
-  src: url(../YoungSerif-Regular.otf) format("opentype");
+  src: url(../otf/YoungSerif-Regular.otf) format("opentype");
 }
 
 body {
@@ -123,7 +123,7 @@ h2 {
 
 .large-tile {
   padding: 50px 44px;
-  width: 802px;
+  width: 803px;
   background: url(../img/oh-no-the-sun.jpg) center/cover no-repeat;
   position: relative;
 }
