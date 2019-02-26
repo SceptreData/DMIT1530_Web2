@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clydeBuilt</title>
+
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <style>
+        @media(min-width: 480px) {
+            body {
+                background: rgb(48, 135, 242);
+            }
+        }
+
+        @media(min-width: 640px) {
+            img {
+                max-width: 480px;
+                background: tomato;
+            }
+        }
+    </style>
+    <figure>
+        <img srcset="    
+            img/srcset/size/320w.png  320w, 
+            img/srcset/size/480w.png 480w,
+            img/srcset/size/720w.png 720w,
+            img/srcset/size/1080w.png 1080w
+            "
+            sizes="(max-width: 640px) 50vw, 100vw" src=" img/srcset/size/fall-back.png" alt="browsers that dont support srcset" />
+        <figcaption>img srcset and sizes</figcaption>
+    </figure>
+
+
+
+
+
+
+    <!-- <img srcset="img/size/320w.png 320w,
+                         img/size/480w.png 480w,
+                         img/size/600w.png 600w,
+                         img/size/800w.png 800w,
+                         img/size/960w.png 960w,
+                         img/size/1200w.png 1200w"
+                sizes="(max-width: 320px) 320px,
+                        (max-width: 480px) 480px,
+                        (max-width: 600px) 600px,
+                        (max-width:720px) 800px,
+                        (max-width: 960px) 960px,
+                       1200px,
+                        "
+                src="img/size/160.png" alt="Elva dressed as a fairy" /> -->
+
+
+
+    </section>
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
