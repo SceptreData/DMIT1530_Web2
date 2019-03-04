@@ -1,0 +1,17 @@
+Terminal Commands
+Ctrl + ~ VSCode Terminal
+
+
+ls - directory listing
+cd - change directory
+
+
+NPM
+
+npm init in Root folder
+
+Installing dependencies:
+
+    npm install package-name
+    npm install -d dev Dependencies
+    npm install -g global dependency
