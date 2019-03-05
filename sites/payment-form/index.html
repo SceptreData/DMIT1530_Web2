@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ClydeBank</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <aside class="payment-form">
+        <header>
+            <h3>PAYMENT</h3>
+            <p class="price-total">$198.56</p>
+        </header>
+        <form id="payment-checkout" class="payment-checkout" action="#">
+            <div class="card-selector">
+                <img src="img/visa-icon.svg" alt="">
+                <img src="img/mastercard-icon.svg"alt="">
+                <img src="img/amex-icon.svg" alt="">
+            </div>
+            <div class="form-control">
+                <label for="card-holder-name">Name on Card</label>
+                <input id="card-holder-name" type="text">
+            </div>
+            
+            <div class="form-control">
+                <label for="card-number">Card Number</label>
+                <input id="card-number" type="text">
+            </div>
+
+            <div class="flex-row"> 
+
+                <div class="form-control">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input id="card-expiry-date" type="text" data-card="detail">
+                </div>
+
+                <div class="form-control">
+                    <label for="security-code">Security Code</label>
+                    <input id="card-security-code" type="text" data-card="detail">
+                </div>
+            </div>
+
+            <div class="form-control">
+
+            </div>
+
+            <button></button>
+        </form>
+    </aside>
+</body>
+
+</html>
