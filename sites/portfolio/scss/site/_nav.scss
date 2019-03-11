@@ -1,0 +1,21 @@
+.site-nav {
+    background: $dark-blue;
+    color: $light-grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.contact-details {
+    text-align: center;
+
+    .email-address {
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+}
+.menu-icon {
+    width: 40px;
+    fill: $light-grey;
+}
