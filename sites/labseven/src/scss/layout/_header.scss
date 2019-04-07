@@ -1,0 +1,10 @@
+.jumbotron-fluid {
+  background: linear-gradient(
+      to bottom,
+      rgba(80, 247, 2, 0.25),
+      rgba(105, 51, 41, 0.5)
+    ),
+    url(../img/tiger.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

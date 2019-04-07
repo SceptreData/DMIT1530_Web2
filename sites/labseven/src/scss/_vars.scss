@@ -1,0 +1,25 @@
+// Colors
+$color--white: #ffffff;
+$color--orange: #e28534;
+
+// Typography
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Shadows Into Light Two", cursive;
+}
+
+a,
+.nav-link {
+  color: $color--white;
+  &:visited {
+    color: $color--white;
+  }
+
+  &:hover {
+    color: $color--orange;
+    text-decoration: none;
+  }
+}
