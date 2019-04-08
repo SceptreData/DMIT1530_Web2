@@ -1,0 +1,8 @@
+What is GIT?
+
+- Code versioning system
+
+Dont see many audio/video files here.
+
+Set up Git Account
+    Get as close to your name as possible.
