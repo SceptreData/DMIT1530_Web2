@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap Basics</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta description="" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Bootstrap Basics</title>
-	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-</head>
+  <body>
+    <nav class="navbar navbar-light bg-danger navbar-expand-sm ">
+      <a href="#" class="navbar-brand text-white">BRAND</a>
+      <button
+        class="navbar-toggler navbar"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar-menu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <button class="btn btn-outline-light btn-sm">LOGIN</button>
+          </li>
 
-<body>
-	<nav class="navbar navbar-light bg-danger navbar-expand-sm ">
-		<a href="#" class="navbar-brand text-white">BRAND</a>
-		<button class="navbar-toggler navbar" type="button" data-toggle="collapse" data-target="#navbar-menu">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbar-menu">
-			<ul class="navbar-nav flex-row">
-				<li class="nav-item">
-					<button class="btn btn-outline-light btn-sm">LOGIN</button>
-				</li>
-	
-				<li class="nav-item">
-					<button class="btn btn-outline-light btn-sm">Sign Up</button>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<!-- <nav class="navbar navbar-light bg-danger fixed-top navbar-expand-sm">
+          <li class="nav-item">
+            <button class="btn btn-outline-light btn-sm">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <nav class="navbar navbar-light bg-danger fixed-top navbar-expand-sm">
 		<a href="#" class="navbar-brand">branding</a>
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu">
 			<span class="navbar-toggler-icon"></span>
@@ -46,9 +50,8 @@
 		</div>
 	</nav> -->
 
-<script src="js/jquery/jquery.min.js"></script>
-<script src="js/popper/popper.min.js"></script>
-<script src="js/bootstrap/bootstrap.min.js"></script>
-</body>
-
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+  </body>
 </html>
