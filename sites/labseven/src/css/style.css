@@ -7023,7 +7023,10 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Josefin Sans", sans-serif; }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Shadows Into Light Two", cursive; }
 
 a,
@@ -7043,6 +7046,14 @@ a,
     color: black; }
 
 .jumbotron-fluid {
-  background: linear-gradient(to bottom, rgba(80, 247, 2, 0.25), rgba(105, 51, 41, 0.5)), url(../img/tiger.webp);
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background: linear-gradient(to bottom, rgba(80, 247, 2, 0.25), rgba(105, 51, 41, 0.5)), url(../img/tiger.webp) no-repeat top center/cover;
+  height: 90vh;
+  color: #ffffff;
+  padding: 34vh 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .jumbotron-fluid {
+      background-size: 100%; } }
+  .jumbotron-fluid h2 {
+    font-size: 72px;
+    text-shadow: 0 3px 20px #000000;
+    letter-spacing: 4px; }

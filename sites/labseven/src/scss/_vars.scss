@@ -3,12 +3,19 @@ $color--white: #ffffff;
 $color--orange: #e28534;
 
 // Typography
+$font-header: "Shadows Into Light Two", cursive;
+$font-body: "Josefin Sans", sans-serif;
+
+// Typography
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: $font-body;
 }
 
-h1 {
-  font-family: "Shadows Into Light Two", cursive;
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-header;
 }
 
 a,

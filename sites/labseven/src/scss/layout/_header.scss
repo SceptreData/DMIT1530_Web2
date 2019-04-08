@@ -4,7 +4,19 @@
       rgba(80, 247, 2, 0.25),
       rgba(105, 51, 41, 0.5)
     ),
-    url(../img/tiger.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
+    url(../img/tiger.webp) no-repeat top center/cover;
+  @media screen and (min-width: 768px) {
+    background-size: 100%;
+  }
+  height: 90vh;
+  color: #ffffff;
+  padding: 34vh 1.5rem;
+
+  h2 {
+    font-size: 72px;
+    text-shadow: 0 3px 20px #000000;
+    letter-spacing: 4px;
+  }
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
