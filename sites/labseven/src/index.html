@@ -1,60 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap Basics</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i|Shadows+Into+Light+Two"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta description="" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Bootstrap Basics</title>
-	<!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="css/style.css" />
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i|Shadows+Into+Light+Two" rel="stylesheet">
-</head>
+  <body class="bg-dark">
+    <div class="container">
+      <nav class="navbar navbar-dark navbar-expand-lg ">
+        <button
+          class="navbar-toggler navbar"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body class="bg-dark">
-	<div class="container">
-		<nav class="navbar navbar-dark navbar-expand-lg ">
-			<a href="#" class="navbar-brand mr-auto"><img src="img/logo.png" alt="Raw&Wild Logo" /></a>
-			<button class="navbar-toggler navbar" type="button" data-toggle="collapse" data-target="#navbar-menu">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+        <div
+          class="collapse navbar-collapse justify-content-lg-center"
+          id="navbar-menu"
+        >
+          <a href="#" class="navbar-brand mr-auto"
+            ><img src="img/logo.png" alt="Raw&Wild Logo"
+          /></a>
 
-			<div class="collapse navbar-collapse justify-content-lg-center" id="navbar-menu">
-				<ul class="navbar-nav flex-md-column flex-lg-row text-light">
-					<li class="nav-item mr-md-5">
-						<a href="#" class="nav-link">home</a>
-					</li>
-					<li class="nav-item mr-md-5">
-						<a href="#" class="nav-link">about</a>
-					</li>
-					<li class="nav-item mr-md-5">
-						<a href="#" class="nav-link">gallery</a>
-					</li>
-					<li class="nav-item mr-md-5">
-						<a href="#" class="nav-link">blog</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">contact</a>
-					</li>
-					<li class="nav-item">
-						<button class="btn btn-light"><a href="#" class="nav-action-btn text-dark align-self-end">Buy
-								Images</a></button>
-					</li>
-				</ul>
-			</div>
-		</nav>
+          <ul
+            class="navbar-nav flex-md-column flex-lg-row text-light ml-auto mr-auto pr-5"
+          >
+            <li class="nav-item mr-md-5">
+              <a href="#" class="nav-link">home</a>
+            </li>
+            <li class="nav-item mr-md-5">
+              <a href="#" class="nav-link">about</a>
+            </li>
+            <li class="nav-item mr-md-5">
+              <a href="#" class="nav-link">gallery</a>
+            </li>
+            <li class="nav-item mr-md-5">
+              <a href="#" class="nav-link">blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">contact</a>
+            </li>
+            <li class="nav-item"></li>
+          </ul>
+          <button class="btn btn-light">
+            <a href="#" class="nav-action-btn text-dark align-self-end"
+              >Buy Images</a
+            >
+          </button>
+        </div>
+      </nav>
 
-		<header class="jumbotron-fluid text-center">
-			<h2>Take this photographic journey</h2>
-			<p>and discover amazing imagery of wild animals</p>
-			<button class="btn btn-light">Book Tour</button>
-			<button class="btn btn-light">Buy Tigers</button>
-		</header>
-	</div>
-	<script src="js/jquery/jquery.min.js"></script>
-	<script src="js/popper/popper.min.js"></script>
-	<script src="js/bootstrap/bootstrap.min.js"></script>
-</body>
+      <header class="jumbotron-fluid text-center mb-5">
+        <h2 style="@media (768px){font-size: 3rem;}">
+          Take this photographic journey
+        </h2>
+        <p>and discover amazing imagery of wild animals</p>
+        <button class="btn btn-light mr-3">Book Tour</button>
+        <button class="btn btn-light">Buy Tigers</button>
+      </header>
 
+      <main
+        class="d-flex flex-column align-items-center d-md-flex flex-md-row justify-content-md-between"
+      >
+        <div class="card bg-warning text-white p-3 mb-4" style="width: 22rem;">
+          <div
+            class="svg-container d-flex justify-content-center border-bottom p-3"
+          >
+            <i class="fas fa-paw" style="font-size: 5rem;"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et sed,
+              sunt doloribus delectus fuga cum ut magnam tenetur quo
+              reprehenderit, neque nobis vitae eos accusantium dolore iusto
+              assumenda corporis corrupti?
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card bg-info text-white p-3 mb-4" style="width: 22rem;">
+          <div
+            class="svg-container d-flex justify-content-center border-bottom p-3"
+          >
+            <i class="fas fa-hippo" style="font-size: 5rem;"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et sed,
+              sunt doloribus delectus fuga cum ut magnam tenetur quo
+              reprehenderit, neque nobis vitae eos accusantium dolore iusto
+              assumenda corporis corrupti?
+            </p>
+            <a href="#" class="btn btn-success">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card bg-success text-white p-3 mb-4" style="width: 22rem;">
+          <div
+            class="svg-container d-flex justify-content-center border-bottom p-3"
+          >
+            <i class="fas fa-cat" style="font-size: 5rem;"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et sed,
+              sunt doloribus delectus fuga cum ut magnam tenetur quo
+              reprehenderit, neque nobis vitae eos accusantium dolore iusto
+              assumenda corporis corrupti?
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+  </body>
 </html>
