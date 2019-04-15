@@ -1,0 +1,14 @@
+body{
+    
+    margin:0 auto;
+    display:grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: fit-content(100px)  minmax(180px, 1fr)  fit-content(200px);
+    grid-gap:1rem;
+}
+
+nav{
+    grid-row:1;
+    just
+}
+
