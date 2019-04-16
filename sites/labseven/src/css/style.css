@@ -7046,14 +7046,15 @@ a,
     color: black; }
 
 .jumbotron-fluid {
+  border-radius: 3px;
   background: linear-gradient(to bottom, rgba(80, 247, 2, 0.25), rgba(105, 51, 41, 0.5)), url(../img/tiger.webp) no-repeat top center/cover;
-  height: 90vh;
+  max-height: 1060px !important;
   color: #ffffff;
   padding: 34vh 1.5rem; }
-  @media screen and (min-width: 768px) {
-    .jumbotron-fluid {
-      background-size: 100%; } }
   .jumbotron-fluid h2 {
-    font-size: 72px;
+    font-size: 3rem;
     text-shadow: 0 3px 20px #000000;
     letter-spacing: 4px; }
+    @media screen and (min-width: 600px) {
+      .jumbotron-fluid h2 {
+        font-size: 72px; } }
