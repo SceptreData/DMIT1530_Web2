@@ -1,0 +1,16 @@
+.site-nav {
+  background: black;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.list-view {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
+}
+
+.list-view li {
+  margin-right: 2rem;
+}
